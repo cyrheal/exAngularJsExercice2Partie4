@@ -1,0 +1,21 @@
+<!--
+Exercice 2
+Faire une page HTML permettant d'afficher la liste des voitures et leur
+couleur du fichier voiture.json.-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercice 2</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+</head>
+<body ng-app = "carsApp">
+  <div ng-controller = "carsController">
+    <ul>
+      <li ng-repeat = "car in arrayCars">{{car.marque +" , "+ car.couleur}}</li>
+    </ul>
+  </div>
+  <script src="assets/js/exercice2.js"></script>
+</body>
+</html>
